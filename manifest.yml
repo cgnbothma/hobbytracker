@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: hobbytracker
+  memory: 128M
+  disk_quota: 500M
+  buildpack: sdk-for-nodejs
+  command: npm start
+  random-route: true
+  env:
+    OPTIMIZE_MEMORY: true
